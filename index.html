@@ -16,15 +16,15 @@
     <h1>Simple Weather App</h1>
     <div id="weather-container">
         <input type="text" id="city" placeholder="Enter city name...">
-        <button type="submit">Search</button>
+        <button type="submit" onclick="getWeather(); document.getElementById('city').value = ''" >Search</button>
 
-        <div class="city-name"></div>
+        <div id="city-name"></div>
 
-        <img id="weather-icon" alt="Weather Icon">
+        <img id="weather-icon" alt="Weather Icon" style="display: none;">
 
-        <div class="temp-div"></div>
+        <div id="temp-div"></div>
 
-        <div class="feels-like"></div>
+        <div id="feels-like"></div>
     </div>
 </body>
 </html>
