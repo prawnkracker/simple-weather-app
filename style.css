@@ -45,3 +45,26 @@ button {
     width: 100px;
     font-size: 15px;
 }
+
+button:hover {
+    background: #605968;
+}
+
+.weather-info {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+}
+
+#temp-div, #feels-like, #humidity, #wind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#temp-div, #feels-like, #humidity, #wind p {
+    font-size: 20px;
+}
+
+#weather-description {
+    grid-column: span 2;
+}

@@ -5,6 +5,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <link rel="stylesheet" href="./style.css">
 
     <script defer src="./script.js"></script>
@@ -13,18 +15,25 @@
 </head>
 
 <body>
-    <h1>Simple Weather App</h1>
     <div id="weather-container">
-        <input type="text" id="city" placeholder="Enter city name...">
+        <input type="text" id="city" placeholder="Enter city...">
         <button type="submit" onclick="getWeather(); document.getElementById('city').value = ''" >Search</button>
 
         <div id="city-name"></div>
 
         <img id="weather-icon" alt="Weather Icon" style="display: none;">
 
-        <div id="temp-div"></div>
+        <section class='weather-info'>
+            <div id="weather-description"></div>
+            
+            <div id="temp-div"></div>
 
-        <div id="feels-like"></div>
+            <div id="feels-like"></div>
+
+            <div id="humidity"></div>
+
+            <div id="wind"></div>
+        </section>
     </div>
 </body>
 </html>
